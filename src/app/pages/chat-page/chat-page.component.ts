@@ -6,11 +6,10 @@ import { Observable } from 'rxjs';
 import { ChatService } from 'src/app/services/chat.service';
 
 @Component({
-  selector: 'app-chat-page',
-  templateUrl: './chat-page.component.html',
-  styleUrls: ['./chat-page.component.css'],
-  standalone: true,
-  imports: [AsyncPipe, FormsModule]
+    selector: 'app-chat-page',
+    templateUrl: './chat-page.component.html',
+    styleUrls: ['./chat-page.component.css'],
+    imports: [AsyncPipe, FormsModule]
 })
 export class ChatPageComponent {
   chatService = inject(ChatService);
